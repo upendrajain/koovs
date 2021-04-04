@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style type="">
+  	.card
+  	{
+  		width:50%;
+  	}
+  	#login .card .box-shadow
+  	{
+  		box-shadow: 0px 0px 1px 0px #000;
+  		padding:10px 10px;
+  	}
+  	#login form 
+  	{
+  		    border-bottom: none;
+  	}
+    #signup-btn
+    {
+        background-color:black;
+        color:white;
+        box-shadow: 0px 0px 2px 0px #000;
+        padding:2px 50px !important;
+        font-size: 1.5rem;
+    }
+  	@media only screen and (max-width: 768px)
+  	{
+      #login
+      {
+        width:100%;
+        height:100% !important;
+      }
+    	#login .card
+    	{
+    		/*margin:50px 50px auto !important;*/
+    		width:100% !important;
+    		padding:0px 10px;
+        position: relative;
+        border:0;
+    	}
+      #signup-btn
+      {
+        display: block !important;
+        border-radius:2px !important;
+        background-color:#000;
+        color:#fff;
+        box-shadow: 0px 0px 2px 0px #000;
+        padding:2px 20px !important;
+        font-size: 1rem;
+        transition:all 0.3s linear;
+      }
+      #signup-btn:hover
+      {
+        background-color:#fff;
+        color:#000;
+      }
+      form .text-center
+      {
+        display: flex;
+        justify-content: center;
+      }
+  }
+  </style>
+</head>
+<body>
+	<!--navbar start-->
+<nav class="navbar navbar-expand-lg navbar-light bg-white px-md-5">
+  <button class="navbar-toggler" type="button" data-target="#menu-left-slider" onclick="opennav();">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-target="mega-menu-men"  onmouseout="megaclosemen()"; onmouseover="megaopenmen();">MEN</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" data-target="mega-menu-women"  onmouseout="megaclosewomen()"; onmouseover="megaopenwomen();">WOMEN</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">INSPIRATION</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">THE BLOG</a>
+      </li>
+    </ul>
+    <div class="nav-logo text-center mr-auto">
+		<a class="navbar-brand" href="#">UF.COM</a>
+	</div>
+	<div class="right-content">
+    <div class="nav-form">
+    <form class="form-inline">
+      <input class="form-control" type="search" placeholder="Search for product....." aria-label="Search">
+      <button class="btn btn-search" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+    </form>
+	</div>
+	<div class="nav-icon d-flex text-center mt-2">
+		<div class="d-flex flex-column pl-2 pr-2">
+		<i class="fa fa-heart-o" aria-hidden="true"></i>
+		<span>Wishlist</span>
+		</div>
+		<div class="d-flex flex-column text-center pl-2 pr-2">
+		<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+		<span>Bag</span>
+		</div>
+	</div>
+  </div>
+</div>
+</nav>
+<div id="menu-left-slider">
+	<ul class="navbar-nav mr-auto">
+		<!-- <a href="#" onclick="closenav()">X</a> -->
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">MEN</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">WOMEN</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">INSPIRATION</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">THE BLOG</a>
+      </li>
+    </ul>
+</div>
+<div id="mega-menu-men" class="px-md-4">
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="mega-child d-flex flex-column">
+      <a href="#">Dresses</a>
+      <a href="#">Dresses</a>
+      <a href="#">Dresses</a>
+      <a href="#">Dresses</a>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="mega-child d-flex flex-column">
+      <a href="#">Dresses</a>
+      <a href="#">Dresses</a>
+      <a href="#">Dresses</a>
+      <a href="#">Dresses</a>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="mega-child d-flex flex-column">
+      <a href="#">Dresses</a>
+      <a href="#">Dresses</a>
+      <a href="#">Dresses</a>
+      <a href="#">Dresses</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="mega-menu-women" class="px-md-4">
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="mega-child d-flex flex-column">
+      <a href="#">Dresses</a>
+      <a href="#">Dresses</a>
+      <a href="#">Dresses</a>
+      <a href="#">Dresses</a>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="mega-child d-flex flex-column">
+      <a href="#">Dresses</a>
+      <a href="#">Dresses</a>
+      <a href="#">Dresses</a>
+      <a href="#">Dresses</a>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="mega-child d-flex flex-column">
+      <a href="#">Dresses</a>
+      <a href="#">Dresses</a>
+      <a href="#">Dresses</a>
+      <a href="#">Dresses</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--navbar end-->
+<div id="login">
+<div class="card mt-5 mb-5" style="width: 50%;margin:auto;">
+  <div class="card-body">
+  	<div class="text-center">
+  		<h3 class="card-title">Log In</h3>
+    	<p class="text-muted">Sign in to access your Orders, Wishlist and Recommendations</p>
+  	</div>
+    <h4 class="card-subtitle mt-5 mb-5">Continue With</h4>
+    <div class="row text-center">
+    	<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+    		<div class="box-shadow">
+    		<a href="#"><i class="fa fa-facebook-official text-primary" aria-hidden="true"></i>Facebook</a>
+    		</div>
+    	</div>
+    	<div class="col-lg-6 col-md-6 col-sm-6 col-6">
+    		<div class="box-shadow">
+    		<a href="#"><i class="fa fa-google text-success" aria-hidden="true"></i>Google</a>
+    		</div>
+    	</div>
+    </div>
+<form class="mt-5 mb-5">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+<div class="text-center">
+  <button type="submit" class="btn btn-black" id="signup-btn">Log in</button>
+</div>
+</form>
+ </div>
+</div>
+</div>
+
+<script type="">
+	function megaopenmen(){
+    var x = document.getElementById("mega-menu-men");
+    x.style.height='40%';
+    // x.style.display="block";
+    }
+  function megaopenwomen(){
+    var y = document.getElementById("mega-menu-women");
+    y.style.height='40%';
+    // y.style.display="block";
+  }
+  function megaclosemen(){
+    var x = document.getElementById("mega-menu-men");
+      x.style.height='0%';
+      // x.style.display="none";
+
+  }
+  function megaclosewomen(){
+    var y = document.getElementById("mega-menu-women");
+    y.style.height='0%';
+    // y.style.display="none";
+  }
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
